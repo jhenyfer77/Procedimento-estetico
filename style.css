@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    background-color: #ffe4ec;
+    text-align: center;
+}
+
+h1 {
+    color: #c2185b;
+}
+
+input {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #c2185b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #c2185b;
+}
