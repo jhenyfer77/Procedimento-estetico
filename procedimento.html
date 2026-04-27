@@ -13,25 +13,18 @@
     <a href="agendamento.html">Agendamento</a>
 </nav>
 
-<h1>Cadastro de Procedimento</h1>
+<h1>Procedimentos</h1>
 
-<input type="text" placeholder="Nome do procedimento">
-
-<br>
-
-<input type="number" placeholder="Preço">
+<select id="procedimento" onchange="mostrarPreco()">
+    <option value="">Selecione um procedimento</option>
+    <option value="500">Botox</option>
+    <option value="800">Preenchimento labial</option>
+    <option value="600">Micropigmentação</option>
+</select>
 
 <br><br>
 
-<button onclick="salvar()">Salvar</button>
-
-<h2>Procedimentos disponíveis:</h2>
-
-<ul>
-    <li>Botox - R$ 500</li>
-    <li>Preenchimento labial - R$ 800</li>
-    <li>Micropigmentação - R$ 600</li>
-</ul>
+<h2 id="preco">Preço: R$ 0</h2>
 
 <script src="script.js"></script>
 </body>
