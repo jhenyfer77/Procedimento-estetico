@@ -1,3 +1,3 @@
 function salvar() {
-    alert("Salvo com sucesso!");
+    alert("Dados salvo com sucesso!");
 }
