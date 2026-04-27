@@ -33,3 +33,8 @@ button {
     border: none;
     border-radius: 5px;
 }
+select {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
