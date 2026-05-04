@@ -68,3 +68,37 @@ button {
     width: 100%;
     border-radius: 10px;
 }
+
+#info {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4b0082;
+}
+/* ANIMAÇÃO NOS CARDS */
+.card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* DETALHE */
+.detalhe-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.detalhe-box img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#detalhe button {
+    margin-top: 20px;
+}
