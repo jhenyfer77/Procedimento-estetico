@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Catálogo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Catálogo</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <a href="cliente.html">Cliente</a>
-    <a href="procedimento.html">Catálogo</a>
-    <a href="agendamento.html">Agendamento</a>
-</nav>
+    <nav id="menu">
 
-<h1>Catálogo de Procedimentos</h1>
+        <div class="nav-left">
+            <img src="img/logo1.png" class="logo">
+            <span class="nome-clinica">Aura Beauty</span>
+        </div>
+    
+        <div class="nav-right">
+            <a href="cliente.html">Cliente</a>
+            <a href="procedimento.html">Catálogo</a>
+            <a href="agendamento.html">Agendamento</a>
+        </div>
+    
+    </nav>
+<h1 id="titulo">Catálogo de Procedimentos</h1>
 
-<div class="catalogo">
+<div id="conteudo">
 
-    <div class="card" onclick="abrir('img/botoox.jpg','Botox','Reduz rugas e linhas de expressão.','500')">
-        <img src="img/botoox.jpg">
-        <h3>Botox</h3>
-    </div>
-
-    <div class="card" onclick="abrir('img/labial.jpg','Preenchimento Labial','Aumenta o volume dos lábios.','800')">
-        <img src="img/labial.jpg">
-        <h3>Preenchimento Labial</h3>
-    </div>
-
-    <div class="card" onclick="abrir('img/micro.jpg','Micropigmentação','Realça os lábios.','600')">
-        <img src="img/micro.jpg">
-        <h3>Micropigmentação</h3>
-    </div>
-
-    <div class="card" onclick="abrir('img/Peeling','Peeling','Renovação da pele, melhora manchas e textura.','300')">
-        <img src="img/Peeling">
-        <h3>Peeling</h3>
+    <h2>Rosto</h2>
+    <div class="catalogo">
+    
+        <div class="card" onclick="abrir('img/botox.jpg','Botox','Reduz rugas e linhas de expressão.','500')">
+            <img src="img/botox.jpg">
+            <h3>Botox</h3>
+        </div>
+    
+        <div class="card" onclick="abrir('img/Pfacial.webp','Preenchimento Facial','Devolve volume ao rosto.','1200')">
+            <img src="img/Pfacial.webp">
+            <h3>Preenchimento Facial</h3>
+        </div>
+    
     </div>
     
-    <div class="card" onclick="abrir('img/Pfacial.webp','Preenchimento Facial','Preenche rugas e devolve volume ao rosto com ácido hialurônico.','1200')">
-        <img src="img/Pfacial.webp">
-        <h3>Preenchimento Facial</h3>
+    
+    <h2>Lábios</h2>
+    <div class="catalogo">
+    
+        <div class="card" onclick="abrir('img/labial.jpg','Preenchimento Labial','Aumenta o volume dos lábios.','800')">
+            <img src="img/labial.jpg">
+            <h3>Preenchimento Labial</h3>
+        </div>
+    
+        <div class="card" onclick="abrir('img/micro.jpg','Micropigmentação','Realça sobrancelhas e define traços.','600')">
+            <img src="img/micro.jpg">
+            <h3>Micropigmentação</h3>
+        </div>
+    
     </div>
     
-    <div class="card" onclick="abrir('img/Agulhamento.jpg','Microagulhamento','Estimula colágeno e melhora a aparência da pele.','400')">
-        <img src="img/Agulhamento.jpg">
-        <h3>Microagulhamento</h3>
+    
+    <h2>Pele</h2>
+    <div class="catalogo">
+    
+        <div class="card" onclick="abrir('img/peeling.jpg','Peeling','Renova a pele e melhora manchas.','300')">
+            <img src="img/peeling.jpg">
+            <h3>Peeling</h3>
+        </div>
+    
+        <div class="card" onclick="abrir('img/Agulhamento.jpg','Microagulhamento','Estimula colágeno.','400')">
+            <img src="img/Agulhamento.jpg">
+            <h3>Microagulhamento</h3>
+        </div>
+    
     </div>
 
 </div>
 
-<!-- TELA DE DETALHE -->
+<!-- DETALHE -->
 <div id="detalhe" style="display:none;">
-    <button onclick="fechar()">Voltar</button>
+
+    <div class="topo-detalhe">
+        <button class="btn-voltar" onclick="fechar()">← Voltar</button>
+    </div>
 
     <div class="detalhe-box">
         <img id="imgDetalhe">
@@ -61,11 +89,9 @@
             <h3 id="precoDetalhe"></h3>
         </div>
     </div>
+
 </div>
 
-<h2 id="info"></h2>
-
-
-</body>
 <script src="script.js"></script>
+</body>
 </html>
