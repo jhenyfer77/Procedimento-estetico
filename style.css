@@ -1,24 +1,46 @@
 body {
     font-family: Arial;
-    background-color: #febfee;
+    background-color: #F8F1E9;
     margin: 0;
     text-align: center;
 }
 
+/* NAV */
 nav {
-    background-color: #bc327e;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #Ffffff;
 }
 
-nav a {
-    color: #fce565;
-    margin: 15px;
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+}
+
+.nome-clinica {
+    color: #4B2E2B;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-right a {
+    color: #4B2E2B;
+    margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* TÍTULO */
 h1 {
-    color: #8d104b;
+    color: #4B2E2B;
 }
 
 /* CATÁLOGO */
@@ -33,27 +55,32 @@ h1 {
     padding: 15px;
     border-radius: 10px;
     width: 150px;
+    height: 200px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-    border: 2px solid #fce565f0;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #D4AF37;
+    overflow: hidden;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
 }
 
-/* DETALHE (AQUI TÁ O SEGREDO) */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* DETALHE */
 #detalhe {
     display: none;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* CENTRALIZA NA TELA */
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .detalhe-box {
@@ -70,83 +97,20 @@ h1 {
 .detalhe-box div {
     text-align: left;
 }
-.card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
-.card {
-    width: 150px;
-    height: 200px;
-    overflow: hidden;
-}
-#detalhe {
-    display: none;
-}
-#detalhe {
-    position: relative;
-}
-
+/* BOTÃO VOLTAR */
 .btn-voltar {
     position: absolute;
     top: 20px;
     left: 20px;
-
-    background-color: #bc327e;
-    color: #fce565;
+    background-color: #4B2E2B;
+    color: #D4AF37;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
-
-    font-weight: bold;
     cursor: pointer;
-
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    transition: 0.3s;
 }
 
 .btn-voltar:hover {
-    background-color: #8d104b;
-    transform: scale(1.05);
-}
-#detalhe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #4B2E2B;
-}
-
-/* lado esquerdo */
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* logo */
-.logo {
-    height: 40px;
-}
-
-/* nome da clínica */
-.nome-clinica {
-    color: #D4AF37;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* menu */
-.nav-right a {
-    color: #D4AF37;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #6D4C41;
 }
