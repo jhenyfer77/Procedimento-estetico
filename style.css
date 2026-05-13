@@ -8,16 +8,21 @@ body {
 /* NAV */
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* empilha */
     align-items: center;
-    padding: 15px 30px;
-    background-color: #Ffffff;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.nav-links {
+    margin-top: 10px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #1800ad;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .logo {
